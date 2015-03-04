@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('create');
     this.route('show');
   });
+  this.route('friends');
 });
 
 export default Router;
