@@ -1,7 +1,11 @@
 <h1>Recipes Index</h1>
   <ul>
+    {{#each recipe in parse}}
     <li>{{recipe.name}}</li>
     {{/each}}
   </ul>
+
+  {{#link-to 'recipes.show' recipe}}
+  {{/link-to}}
 
 {{outlet}}
