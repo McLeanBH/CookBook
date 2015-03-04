@@ -1,1 +1,72 @@
+<h1>Add a New Recipe</h1>
+
+<form {{action "save" on="submit"}}>
+<p>
+<label>Name:
+{{input value=model.name}}
+</label>
+</p>
+<p>
+<label>Description:
+{{input value=model.description }}
+</label>
+</p>
+
+<p>
+<label>Author:
+{{input value=model.author}}
+</label>
+</p>
+<p>
+<label>Recipe Type:
+{{input value=model.recipeType}}
+</label>
+</p>
+<p>
+<label>Prep Time:
+{{input value=model.prepTime}}{{input value=model.prepTimeUnit}}
+</label>
+</p>
+
+
+<p>
+<label>Cook Time:
+{{input value=model.cookTime}} {{input value=model.cookTimeUnit}}
+</label>
+</p>
+
+
+
+<p>
+<label>Cook Temp:
+{{input value=model.cookTemp}} {{input value=model.cookTempUnit}}
+</label>
+</p>
+<p>
+<label>Note:
+{{input value=model.note}}
+</label>
+</p>
+
+<p>
+<label>Yield:
+{{input value=model.yieldName}}{{input value=model.yieldNumber}}
+</label>
+</p>
+
+<p>
+<label>Ingredients:
+{{input value=model.ingredient}}
+</label>
+</p>
+
+
+
+<input type="submit" value="Save"/>
+<button {{action "cancel"}}>Cancel</button>
+</form>
+
+
+
+
 {{outlet}}
