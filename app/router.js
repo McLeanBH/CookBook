@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('recipes', function() {
+    this.route('edit');
+    this.route('create');
+    this.route('show');
+  });
 });
 
 export default Router;
