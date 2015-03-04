@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import ajax from 'ic-ajax';
 import Ember from 'ember';
 
@@ -25,4 +26,9 @@ export default Ember.Object.extend({
       });
     });
   }
+=======
+import DS from 'ember-data';
+
+export default DS.RESTAdapter.extend({
+>>>>>>> 8846c81... ref data in readme, adapter and friends route created
 });
