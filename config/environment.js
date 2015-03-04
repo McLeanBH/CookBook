@@ -22,7 +22,7 @@ module.exports = function(environment) {
     'default-src': "'none'",
     'script-src': "'self'",
     'font-src': "'self'",
-    'connect-src': " 'https://api.parse.com'",
+    'connect-src': "'self' https://api.parse.com",
     'img-src': "'self'",
     'style-src': "'self' 'unsafe-inline'",
     'media-src': "'self'"
