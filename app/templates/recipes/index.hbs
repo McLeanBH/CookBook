@@ -1,4 +1,4 @@
-<h1>Recipes Index</h1>
+<h1>CookBook: Recipes Index List</h1>
   <ul>
     {{#each recipe in model}}
     <li class="recipes">
@@ -6,10 +6,8 @@
       <p>{{recipe.recipeType}}</p>
       <p>{{recipe.description}}</p>
       <p>{{recipe.note}}</p>
-      <p class="prep-time">{{recipe.prepTime}}</p>
-      <p class="prep-time">{{recipe.prepTimeUnit}}</p>
-      <p class="temp">{{recipe.cookTemp}}</p>
-      <p class="temp">{{recipe.cookTempUnit}}</p>
+      <p  class="prep-time">{{recipe.prepTime}}{{recipe.prepTimeUnit}}</p>
+      <p class="temp">{{recipe.cookTemp}}{{recipe.cookTempUnit}}</p>
       <p class="yield">{{recipe.yieldName}}</p>
       <p class="yield">{{recipe.yieldNameUnit}}</p>
 
