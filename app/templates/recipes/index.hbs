@@ -1,16 +1,20 @@
 <h1>CookBook: Recipes Index List</h1>
   <ul>
     {{#each recipe in model}}
+    <hr />
     <li class="recipes">
-      <h3>{{recipe.name}}</h3>
-      <p>{{recipe.recipeType}}</p>
-      <p>{{recipe.description}}</p>
-      <p>{{recipe.note}}</p>
-      <p  class="prep-time">{{recipe.prepTime}}{{recipe.prepTimeUnit}}</p>
-      <p class="temp">{{recipe.cookTemp}}{{recipe.cookTempUnit}}</p>
-      <p class="yield">{{recipe.yieldName}}</p>
-      <p class="yield">{{recipe.yieldNameUnit}}</p>
-
+      <div class="left">
+        <h3 class="name">{{recipe.name}}</h3>
+        <p class="recipe-type">{{recipe.recipeType}}</p>
+        <p class="description">{{recipe.description}}</p>
+        <p class="prep-time">{{recipe.prepTime}}{{recipe.prepTimeUnit}}</p>
+        <p class="temp">{{recipe.cookTemp}}{{recipe.cookTempUnit}}</p>
+        <p class="yield">{{recipe.yieldName}}</p>
+        <p class="yield">{{recipe.yieldNameUnit}}</p>
+      </div>
+      <div class="right">
+        <p class="note">{{recipe.note}}</p>
+      </div>
       </li>
   {{/each}}
   </ul>
