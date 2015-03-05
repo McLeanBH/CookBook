@@ -1,1 +1,4 @@
-{{outlet}}
+<form {{action 'createRecipe' on="submit"}}>
+  <h1>New Recipe</h1>
+  {{input type="text" value=model.url placeholder="URL"}}
+</form>
