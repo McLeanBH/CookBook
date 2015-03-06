@@ -1,2 +1,34 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'bower_components/neat/app/assets/stylesheets/neat';
+
+
+* {
+  box-sizing: border-box;
+}
+
+.prep-time {
+  display: block;
+}
+
+.temp {
+  display: block;
+}
+
+li {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recipes {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+.name {
+  text-decoration: underline;
+  font-weight: 700;
+}
