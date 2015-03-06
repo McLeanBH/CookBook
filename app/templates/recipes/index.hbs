@@ -1,10 +1,8 @@
 <h1>CookBook: Recipes Index List</h1>
-
  <ul>
    {{#each recipe in model}}
    <hr/>
    <li class="recipes">
-
      <div class="left">
        <h3 class="name">{{recipe.name}}</h3>
        <p class="recipe-type">{{recipe.recipeType}}</p>
@@ -19,9 +17,7 @@
      </div>
      <button {{action 'destroy'}}>Delete</button>
      <button {{action 'edit'}}>Edit</button>
-
      </li>
  {{/each}}
  </ul>
-
 {{outlet}}

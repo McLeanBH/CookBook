@@ -17,7 +17,7 @@ export default Ember.Object.extend({
  findAll: function(name) {
    /* jshint unused: false */
    console.log('adapter.findAll');
-   return ajax("https://api.parse.com/1/classes/Recipe").then(function(response){
+   return ajax("https://api.parse.com/1/classes/Recipe/").then(function(response){
      return response.results.map(function(recipe) {
        recipe.id = recipe.objectId;
        delete recipe.objectId;
